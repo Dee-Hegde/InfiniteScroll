@@ -1,38 +1,123 @@
+@import '~antd/dist/antd.css';
+
 .App {
   text-align: center;
+  width: 99% !important;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*  */
+/* Common Css */
+/*  */
+.mauto{
+  margin: auto !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mt10{
+  margin-top: 10px !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mt20{
+  margin-top: 20px !important;
+}
+.mb20{
+  margin-bottom: 20px !important;
+}
+.m10{
+  margin: 10px;
+}
+/*  */
+/* NavBar CSS */
+/*  */
+.nav-container{
+  width: 100% !important;
+  height: 7.5vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: fixed;
+  top:0;
+  background-color: #fff;
+  z-index: 99;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.logo{
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
+}
+.nav-btn-container{
+  width: 60%;
+ display: flex;
+ justify-content: right !important;
+ align-items: flex-end !important;
+}
+.nav-button{
+  width: 20% !important;
+  margin-right: 20px;
+  background-color: rgb(111, 81, 230);
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 767px) {
+  .nav-button{
+    width: 100px !important;
+    margin-right: 20px;
+    background-color: rgb(111, 81, 230);
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*  */
+/* Login page Css */
+/*  */
+.login-container{
+  width: 30%;
+  height: 50vh;
+  margin: auto;
+  margin-top: 8vh !important;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: left;
+  border-radius: 8px;
+}
+.ant-input:hover{
+  border: 1px solid rgb(111, 81, 230) !important;
+}
+.ant-btn-primary{
+  background-color: rgb(111, 81, 230) !important;
+  color: #fff;
+  border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+  .login-container{
+    width: 90%;
+    box-shadow:none;
   }
-  to {
-    transform: rotate(360deg);
+}
+/*  */
+/* Home Page Css */
+/*  */
+.home-container{
+  width: 30%;
+  margin: auto;
+  margin-top: 8vh;
+  position: relative;
+  z-index: 1;
+}
+.user-card{
+border: 1px solid rgb(111, 81, 230) !important;
+border-radius: 10px;
+position: relative;
+z-index: 1;
+}
+.user-img{
+  border-radius: 25px;
+}
+@media (max-width: 1000px) {
+  .home-container{
+    width: 90%;
+    margin: auto;
+    margin-top: 7.5vh;
   }
+}
+.error{
+  color: red;
+  font-size: 12px;
 }
